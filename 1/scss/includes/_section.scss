@@ -1,0 +1,14 @@
+.section {
+    padding: 8rem 0;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.section-header {
+    padding-bottom: 2rem;
+
+    .section-subtitle {
+        font-size: 14px;
+    }
+}

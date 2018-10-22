@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="1/css/styles.css"> 
+    <title>Frank - Portfolio Website Template</title>
+</head>
+<body>
+    <div id="home" class="jumbotron jumbotron-fluid h-50vh">
+        <div class="h-100 container d-flex flex-column align-items-center justify-content-center">
+            <h1 class="text-black text-uppercase font-weight-bold jumbotron-title">Frank</h1>
+            <p class="text-white text-uppercase jumbotron-subtitle">Modern & Clean Portfolio Template</p>
+        </div>
+    </div>
+    
+    
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/vendor/tilt.js"></script>
+    <script>
+        $(function(){
+            'use strict';
+            $('.portfolio-item').tilt({
+                perspective: 3000,
+                speed: 500,
+            })
+
+            const imageElements = $('[data-image]');
+            for(let element of imageElements) {
+                $(element).css("background-image",`url(${$(element).data('image')})`);
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+.btn {
+    padding: 8px 24px;
+    border-radius: 100px;
+    font-size: 12px;
+    text-transform: uppercase;
+
+    &-outlined {
+        color: white;
+        background: transparent;
+        border: 2px solid;
+    }
+
+    &-dark {
+        background: $secondary-light;
+
+        &:hover {
+            background: $secondary;
+        }
+    }
+}

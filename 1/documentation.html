@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css"> 
+    <title>Frank Website Template Documentation</title>
+</head>
+<body>
+    <nav class="navbar navbar-light fixed-top">
+        <div class="container">
+            <a href="index.html" class="navbar-brand font-weight-bold text-white">Frank Docs</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="#introduction" class="nav-link">Introduction</a></li>
+                    <li class="nav-item"><a href="#general" class="nav-link">General</a></li>
+                    <li class="nav-item"><a href="#images" class="nav-link">Changing Images</a></li>
+                    <li class="nav-item"><a href="#video" class="nav-link">Changing Video</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="home" class="jumbotron jumbotron-fluid h-50vh" data-image="http://frank-template.surge.sh/img/hero-background.png">
+        <div class="h-100 container d-flex flex-column align-items-center justify-content-center">
+            <h1 class="text-white text-uppercase font-weight-bold jumbotron-title">Frank Documentation</h1>
+            <p class="text-white text-uppercase jumbotron-subtitle">Experienced Web Designer &amp; Developer</p>
+        </div>
+    </div>
+    <section id="introduction" class="py-5">
+        <div class="container">
+            <div class="section-header">
+                <h1>Introduction</h1>
+                <p class="lead">Thank you for purchasing this template.</p>
+            </div>
+            <div class="content">
+                <p>
+                    Thank you for purchasing Frank. This simple Documentation will provide you with all the information you'll need to make use of this template.
+                </p>
+
+                <p>
+                    If there is something you can't find, or need more information, feel free to contact me at <u>darrionr007@gmail.com</u>. Let's get to it!
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="general" class="py-5">
+        <div class="container">
+            <div class="section-header">
+                <h1>General</h1>
+                <p class="lead">Information on how to change colors, edit CSS,etc.</p>
+            </div>
+            <div class="content">
+                <h3>Colors</h3>
+                <p>
+                    The primary color of this template is <code>#83E8BA</code>. It provides great contrast against the dark grey background of the template. You can change this color by creating a new rule at the end of the CSS file and targeting the <code>text-primary</code> and <code>bg-primary</code> CSS rules. See below:
+                </p>
+
+                <pre>
+                    <code>
+                        // At the end of styles.css
+                        .text-primary {
+                            color: red;
+                        }
+
+                        .bg-primary {
+                            background-color: red;
+                        }
+
+                        // Changing the color of an element
+                        .element {
+                            color: blue;
+                        }
+                    </code>
+                </pre>
+                <p>
+                    Note, however, that the primary color is also used when styling the elements itself. So to change it, you'll need to search through the CSS file, starting from the section labeled Custom CSS and change the green from there from there. You can also use the Find and Replace function on any text editor.
+                </p>
+
+                <p>
+                    If you have SCSS, just change the colors inside of the variables.scss file in the /scss folder.
+                </p>
+                <pre>
+                    <code>
+                        $primary: blue;
+                    </code>
+                </pre>
+                <h3>Icons</h3>
+                <p>Icons are provided by ionic icons. To change any icon on the page, simply change the <code>name</code> attribute of any <code>ion-icon</code> element. Please note, icons are not animated.</p>
+                <pre>
+                    <code>
+                            // Will show a mail icon
+                            &lt;ion-icon name="mail" &gt;&lt;/ion-icon&gt;
+                    </code>
+                </pre>
+                <p>Get a list of icon names here: <a href="https://ionicons.com/">Ionicons</a></p>
+
+                <h3>Bootstrap Grid System</h3>
+                <p>
+                    This template uses Bootstrap 4 for all base elements. You can learn more from their <a href="http://getbootstrap.com/docs/4.1/getting-started/introduction/">documentation</a>.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="images" class="py-5">
+        <div class="container">
+            <div class="section-header">
+                <h1>Changing Images</h1>
+                <p class="lead">Changing Images throughout the document</p>
+            </div>
+            <p>
+                This is my favourite part. I've made changing images extremely easy for my users. To change an image, simply look for the <code>data-image</code> attribute on any html element and change the url inside of it to the url of your image. No need to go inside a CSS file.
+            </p>
+
+            <pre>
+                <code>
+                    &lt;hero data-image="your-image.jpg"&gt;
+                </code>
+            </pre>
+            <p>
+                This simply sets a background-image to the element. This makes it easier to scale and use without cutting any piece of the image off.
+            </p>
+        </div>
+    </section>
+    <section id="video" class="py-5">
+        <div class="container">
+            <div class="section-header">
+                <h1>Changing Video (for video template)</h1>
+                <p class="lead">Changing the Video in the Jumbotron</p>
+            </div>
+            <p>
+                To change the video, simply change the url in the <code>src</code>
+            </p>
+
+            <pre>
+                <code>
+                    &lt;video autoplay muted loop class="jumbotron-video"&gt;
+                        &lt;source src="your-video.mp4" type="video/mp4"&gt;
+                    &lt;/video&gt;
+                </code>
+            </pre>
+        </div>
+    </section>
+    <footer class="py-5">
+        <div class="container">
+            <p>Thank you! If you have any questions, feel free to email me at darrionr007@gmail.com and I'll get back to you ASAP</p>
+        </div>
+    </footer>
+
+
+    <script src="https://unpkg.com/ionicons@4.4.4/dist/ionicons.js"></script>
+    <script src="/js/vendor/jquery.js"></script>
+    <script src="/js/vendor/bootstrap.min.js"></script>
+    <script src="/js/vendor/tilt.js"></script>
+    <script src="/js/vendor/filterizr.min.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+</html>

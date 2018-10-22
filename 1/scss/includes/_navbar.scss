@@ -1,0 +1,77 @@
+.navbar {
+    transition: background-color 0.2s linear;
+    &-scrolled {
+        background: $color-outer-space;
+        
+
+        .navbar-collapse {
+            background: transparent;
+            .navbar-nav li a { color: white}
+        }
+    }
+
+    &-toggler {
+        height: 40px;
+        border: 0px;
+
+        &-icon {
+            position: relative;
+            display: block;
+            height: 2px;
+            width: 32px;
+            border-radius: 100px;
+            background: white;
+
+            &:after, &:before {
+                position: absolute; 
+                left: 0;
+                content: '';
+                height: 2px;
+                width: 32px;
+                background: white;
+            }
+
+            &:after {
+                top: 10px;
+            }
+
+            &:before {
+                bottom: 10px;
+            }
+        }
+
+        &:focus {
+            outline: 0;
+        }
+    }
+
+    &-collapse {
+        background: white;
+        padding: 0px 24px;
+    }
+}
+
+.navbar-dark {
+    .navbar-toggler-icon {
+        background-image: none;
+    }
+}
+
+.navbar-light {
+    .navbar-toggler-icon {
+        background-image: none;
+    }
+}
+
+.navbar-nav {
+    .nav-item {
+        .nav-link {
+            font-size: 14px;
+            text-transform: uppercase;
+
+            &:hover {
+                color: $primary;
+            }
+        }
+    }
+}

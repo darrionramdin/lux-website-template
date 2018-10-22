@@ -1,0 +1,112 @@
+.services-list {
+    width: 100%;
+    height: 160px;
+    margin-top: -60px;
+    background: white;
+    border-radius: 3px;
+    border-top: 4px solid $primary;
+    box-shadow: 0px 0px 60px rgba(0,0,0,0.2);
+
+    @media (max-width: 960px) {
+        height: auto;
+    }
+
+    .service-item {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        &:hover {
+            .service-item-icon {
+                
+                &.icon-sway {
+                    animation: sway 1s linear infinite;
+                    @keyframes sway {
+                        0%, 100%{
+                            transform: translateX(0px);
+                        }
+
+                        50% {
+                            transform: translateX(10px);
+                        }
+                        
+                    }
+                }
+
+                &.icon-phone-ring {
+                    animation: phoneRing 0.2s linear infinite;
+                    @keyframes phoneRing {
+                        0%, 100%{
+                            transform: rotate(0deg);
+                        }
+                
+                        50% {
+                            transform: rotate(10deg);
+                        }
+                        
+                    }
+                }
+
+                &.icon-color-flash {
+                    animation: colorFlash 1s linear infinite;
+                    @keyframes colorFlash {
+                        0%, 100%{
+                            color: inherit;
+                        }
+
+                        25% {
+                            color: #EB4B98;
+                        }
+
+
+                        50% {
+                            color: #5158BB;
+                        }
+
+                        75% {
+                            color: #F26DF9;
+                        }
+                        
+                    }
+                }
+
+                &.icon-zoom {
+                    animation: zoom 0.5s linear infinite;
+                    @keyframes zoom {
+                        0%, 100%{
+                            transform: scale(1);
+                        }
+
+                        50% {
+                            transform: scale(1.5);
+                        }
+
+                    }
+                }
+            }
+        }
+
+        &-icon {
+            margin: 16px 0;
+            color: $primary;
+            font-size: 32px;
+        }
+
+        &-title {
+            font-size: 14px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        &:nth-child(odd) {
+            border-right: 1px solid rgba(0,0,0,0.05);
+        }
+
+        @media (max-width: 960px) {
+            margin: 24px 0;
+            border: 0px;
+        }
+    }
+}

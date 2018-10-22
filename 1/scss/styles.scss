@@ -1,0 +1,113 @@
+@import "variables";
+
+/*------------------------------------------------------------------
+[Info]
+
+Title: Frank - A Portfolio Website Template
+Font Family: 'Open Sans', sans-serif
+Primary Color: #83E8BA
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[Table of contents]
+
+1. Base
+2. Navbar
+3. Jumbotron
+4. Service List
+5. Section
+6. About Section
+7. Portfolio
+8. Testimonials
+9. Cards
+10. Button
+11. Carousel
+12. Contact Form
+13. Utilities
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+ 1. Base Styles + Bootstrap Styles
+*/
+@import "vendor/bootstrap/bootstrap";
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* Here is where you can change the font-family */
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.7;
+}
+
+/*------------------------------------------------------------------
+ 2. Navbar
+*/
+@import "includes/navbar";
+
+/*------------------------------------------------------------------
+ 3. Jumbotron
+*/
+@import "includes/jumbotron";
+
+/*------------------------------------------------------------------
+ 4. Service List
+*/
+@import "includes/service-list";
+
+/*------------------------------------------------------------------
+ 5. Section Styles
+*/
+@import "includes/section";
+
+/*------------------------------------------------------------------
+ 6. About Section (About Profile Image Styles)
+*/
+@import "includes/about";
+
+/*------------------------------------------------------------------
+ 7. Portfolio
+*/
+@import "includes/portfolio";
+
+/*------------------------------------------------------------------
+ 8. Testimonials
+*/
+@import "includes/testimonial";
+
+/*------------------------------------------------------------------
+ 9. Cards
+*/
+@import "includes/card";
+
+/*------------------------------------------------------------------
+ 10. Button
+*/
+@import "includes/button";
+
+/*------------------------------------------------------------------
+ 11. Carousel
+*/
+@import "includes/carousel";
+
+/*------------------------------------------------------------------
+ 12. Contact Form
+*/
+@import "includes/form";
+
+
+
+/*------------------------------------------------------------------
+ 13. Utilities
+*/
+@import "utils";
+
+
+
+
+
+
+
+

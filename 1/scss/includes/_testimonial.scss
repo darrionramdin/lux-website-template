@@ -1,0 +1,19 @@
+.testimonial {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &-image {
+        width: 70px;
+        height: 70px;
+        overflow: hidden;
+        border-radius: 100px;
+        border: 2px solid $primary;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
